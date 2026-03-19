@@ -3,14 +3,12 @@ import sys
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python main.py <agent>")
-        print("  agents: voice, tools, orchestrator")
         sys.exit(1)
 
     agent = sys.argv[1].lower()
 
     if agent == "voice":
-        from agents.agent1_voice import run_agent
+        from agents.voice_agent import run_agent
         run_agent()
 
     elif agent == "tools":
@@ -22,7 +20,6 @@ def main():
         asyncio.run(run_agent())
 
     else:
-        print(f"Unknown agent: '{agent}'")
         print("Choose from: voice, tools, orchestrator")
         sys.exit(1)
 

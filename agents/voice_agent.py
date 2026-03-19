@@ -29,7 +29,7 @@ class VoiceAgent:
             {
                 "role": "system",
                 "content": (
-                    "You are a professional enterprise support agent for Feather AI. "
+                    "You are a professional enterprise support agent for Leaf AI. "
                     "Help customers with billing, accounts, and support. "
                     "Keep responses under 2 sentences — this is a voice call, not a chat. Never use bullet points or markdown."
                 ),
@@ -119,7 +119,7 @@ class VoiceAgent:
                 frames_per_buffer=CHUNK,
             )
 
-            self.speak("Hello! I'm your Feather AI support agent. How can I help you today?")
+            self.speak("Hello! I'm your Leaf AI support agent. How can I help you today?")
 
             while True:
                 if not self.is_speaking:
